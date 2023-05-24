@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap");
 
-
-$color-main: #3F51B5;
-$color-accent: #E81919;
+$color-main: #3f51b5;
+$color-accent: #e81919;
 $color-text: #333333;
 
 $layout-width-inner: 1200px;
 
-$font-en: 'Lato', sans-serif;
-$font-ja: 'Noto Sans JP', sans-serif;
+$font-en: "Lato", sans-serif;
+$font-ja: "Noto Sans JP", sans-serif;
 
 $breakpoints: (
   "sp": "(max-width: 767px)",
@@ -28,7 +27,7 @@ $breakpoints: (
   box-sizing: border-box;
 }
 
-html, 
+html,
 body {
   padding: 0;
   margin: 0;
@@ -58,8 +57,8 @@ h3,
 h4,
 h5,
 h6 {
-padding: 0;
-margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -76,16 +75,16 @@ ul {
   max-width: 100%;
   margin: 0 auto;
 
-  @include mq("tab"){
+  @include mq("tab") {
     padding: 0 24px;
   }
 
-  @include mq("sp"){
+  @include mq("sp") {
     padding: 0 16px;
   }
 }
 
-.section_title{
+.section_title {
   font-size: 48px;
   font-weight: bold;
   position: relative;
@@ -93,7 +92,7 @@ ul {
   padding-bottom: 28px;
   font-family: $font-en;
 
-  @include mq("sp"){
+  @include mq("sp") {
     font-size: 30px;
     padding-bottom: 10px;
   }
@@ -108,7 +107,7 @@ ul {
     height: 4px;
     background-color: $color-main;
 
-    @include mq("sp"){
+    @include mq("sp") {
       width: 30px;
     }
   }
@@ -117,7 +116,7 @@ ul {
 .section {
   padding: 100px 0 120px 0;
 
-  @include mq("sp"){
+  @include mq("sp") {
     padding: 60px 0 80px 0;
   }
 }
@@ -134,7 +133,7 @@ header {
   top: 0;
   left: 0;
 
-  @include mq("sp"){
+  @include mq("sp") {
     height: 60px;
   }
 }
@@ -148,7 +147,7 @@ header {
 .header-logo {
   width: 205px;
 
-  @include mq("sp"){
+  @include mq("sp") {
     width: 150px;
   }
   img {
@@ -162,17 +161,17 @@ header {
   margin-left: auto;
   font-family: $font-en;
 
-  @include mq('sp') {
+  @include mq("sp") {
     display: none;
   }
   li {
-    &:not(:first-child){
+    &:not(:first-child) {
       margin-left: 40px;
     }
-    
+
     a {
       text-decoration: none;
-      color: #FFFFFF;
+      color: #ffffff;
       position: relative;
 
       &::after {
@@ -185,7 +184,7 @@ header {
         transition: all 0.3s ease 0s;
         background: transparent;
       }
-      
+
       &:hover,
       &.is-active {
         &::after {
@@ -196,25 +195,23 @@ header {
   }
 }
 
-
-
 .top {
-background: url(../img/mainvisual.png) no-repeat center center/ cover;
-height: 100vh;
-width: 100%;
-position: relative;
-margin-top: 100px;
-
-@include mq("sp"){
-  margin-top: 60px;
+  background: url(../img/mainvisual.png) no-repeat center center/ cover;
   height: 100vh;
-}
+  width: 100%;
+  position: relative;
+  margin-top: 100px;
+
+  @include mq("sp") {
+    margin-top: 60px;
+    height: 100vh;
+  }
 }
 .top-content {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -224,7 +221,7 @@ margin-top: 100px;
   margin-bottom: 28px;
   line-height: 1.3;
 
-  @include mq("sp"){
+  @include mq("sp") {
     font-size: 32px;
     margin-bottom: 15px;
   }
@@ -235,7 +232,7 @@ margin-top: 100px;
   font-weight: bold;
   margin-bottom: 36px;
 
-  @include mq("sp"){
+  @include mq("sp") {
     font-size: 18px;
     margin-bottom: 18px;
   }
@@ -253,14 +250,14 @@ margin-top: 100px;
     font-size: 24px;
     text-decoration: none;
     border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(#000,0.16);
+    box-shadow: 0 3px 6px rgba(#000, 0.16);
     transition: all 0.3s ease 0s;
 
-    @include mq("sp"){
-    width: 240px;
-    height: 60px;
-    line-height: 60px;
-    font-size: 18px;
+    @include mq("sp") {
+      width: 240px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 18px;
     }
 
     &:hover {
@@ -270,11 +267,10 @@ margin-top: 100px;
 }
 
 .card {
-  background-color: #EFEFEF;
+  background-color: #efefef;
 }
 
 .card-inner {
-
 }
 
 .card-items {
@@ -301,8 +297,8 @@ margin-top: 100px;
   @include mq("tab") {
     width: calc(50% - 24px * 1 / 2);
 
-      &:not(:nth-child(2n + 1)){
-        margin-left: 24px;
+    &:not(:nth-child(2n + 1)) {
+      margin-left: 24px;
     }
 
     &:nth-child(n + 3) {
@@ -320,7 +316,6 @@ margin-top: 100px;
 }
 
 .card-img {
-
   img {
     width: 100%;
   }
@@ -330,60 +325,47 @@ margin-top: 100px;
   font-size: 20px;
   font-weight: bold;
   margin-top: 16px;
-  color: #6F7579;
+  color: #6f7579;
 }
 
 .card-text {
   font-weight: bold;
   margin-top: 16px;
-  color: #6F7579;
+  color: #6f7579;
 }
 
 // news
 
-.news 
-{
+.news {
   background: #fff;
 }
-.news_inner
-{
-  
+.news_inner {
 }
 
-.news_items
-{
-margin-top: 80px;
-
-  
+.news_items {
+  margin-top: 80px;
 }
-.news_item 
-{
+.news_item {
   display: flex;
   padding: 20px 0 12px;
-  &:not(:nth-child(1))
-  {
+  &:not(:nth-child(1)) {
     border-top: 1px solid #707070;
   }
   @include mq("sp") {
     display: block;
   }
 }
-.news_meta 
-{
-display: flex;
-width: 185px;
+.news_meta {
+  display: flex;
+  width: 185px;
 }
-.news_date
-{
+.news_date {
   width: 105px;
   padding-top: 3px;
   font-family: $font-en;
 }
-.news_label
-{
-  
-  a 
-  {
+.news_label {
+  a {
     display: inline-block;
     line-height: 32px;
     text-align: center;
@@ -399,22 +381,18 @@ width: 185px;
       opacity: 0.7;
     }
   }
-  .is_blue
-    {
-      background: #3F51B5;
-    }
-    .is_red
-    {
-      background: #E81919;
-    }
+  .is_blue {
+    background: #3f51b5;
+  }
+  .is_red {
+    background: #e81919;
+  }
 }
-.news_title
-{
+.news_title {
   width: calc(100% - 185px);
   padding-left: 20px;
   padding-top: 3px;
-  a 
-  {
+  a {
     line-height: (20 / 16);
     transition: all 0.3s ease 0s;
 
@@ -430,13 +408,12 @@ width: 185px;
     margin-top: 6px;
   }
 }
-.news_more
-{
+.news_more {
   margin-top: 60px;
   text-align: center;
   font-family: $font-en;
   a {
-    color: #E81919;
+    color: #e81919;
     font-weight: bold;
     padding-right: 14px;
     position: relative;
@@ -462,14 +439,14 @@ width: 185px;
 // price
 
 .price {
-  background: #EFEFEF;
+  background: #efefef;
 }
 
 .price_content {
   display: flex;
   margin-top: 80px;
 
-  @include mq("sp"){
+  @include mq("sp") {
     display: block;
   }
 }
@@ -477,19 +454,18 @@ width: 185px;
 .price_image {
   width: 454 / 1200 * 100%;
 
-  @include mq("sp"){
+  @include mq("sp") {
     width: 100%;
   }
   img {
-
   }
-} 
+}
 
 .price_table {
   width: (172 + 268 + 268) / 1200 * 100%;
   margin-left: auto;
 
-  @include mq("sp"){
+  @include mq("sp") {
     width: 100%;
     margin-top: 24px;
   }
@@ -514,10 +490,10 @@ width: 185px;
       text-align: center;
       font-family: $font-en;
 
-      &:nth-child(1){
+      &:nth-child(1) {
         width: 172px;
 
-        @include mq("sp"){
+        @include mq("sp") {
           width: 86px;
         }
       }
@@ -526,7 +502,7 @@ width: 185px;
       text-align: right;
     }
     strong {
-      color: #E81919;
+      color: #e81919;
       line-height: 1.2;
     }
     span {
@@ -554,15 +530,13 @@ width: 185px;
 // access
 
 .access {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .access_inner {
-
 }
 
 .access_head {
-
 }
 
 .access_map {
@@ -594,7 +568,7 @@ width: 185px;
   display: flex;
   align-items: center;
 
-  &:not(:first-child){
+  &:not(:first-child) {
     margin-top: 8px;
   }
 
@@ -615,7 +589,7 @@ width: 185px;
 .access_button {
   text-align: center;
   margin-top: 30px;
-  
+
   a {
     display: inline-block;
     color: #fff;
@@ -628,13 +602,13 @@ width: 185px;
     position: relative;
     transition: all 0.3s ease 0s;
 
-    @include mq("sp"){
+    @include mq("sp") {
       width: 240px;
       height: 60px;
       line-height: 60px;
       font-size: 18px;
       padding: 0;
-      }
+    }
 
     &:hover {
       opacity: 0.7;
@@ -654,15 +628,13 @@ width: 185px;
 }
 
 .qa {
-  background: #EEEEEE;
+  background: #eeeeee;
 }
 
 .qa_inner {
-  
 }
 
 .qa_head {
-
 }
 
 .qa_items {
@@ -736,7 +708,7 @@ width: 185px;
 .qa_a_content {
   padding: 16px 30px 16px 20px;
   background: #fff;
-  border: 1px solid #3F51B5;
+  border: 1px solid #3f51b5;
   display: none;
 }
 
@@ -746,7 +718,7 @@ width: 185px;
   font-size: 15px;
   font-weight: bold;
   position: relative;
-  
+
   &::before {
     content: "A";
     position: absolute;
@@ -756,14 +728,12 @@ width: 185px;
 }
 
 .contact {
-  background: #EFEFEF;
+  background: #efefef;
 }
 
 .contact_inner {
-
 }
 .contact_head {
-
 }
 
 .contact_form {
@@ -773,31 +743,29 @@ width: 185px;
   background: #fff;
   padding: 60px;
 
-  @include mq("sp"){
+  @include mq("sp") {
     margin-top: 40px;
     padding: 24px;
   }
 }
 
 .contact_form {
-  
 }
 
 .contact_form_dl {
-
 }
 
 .contact_form_row {
   display: flex;
 
-  @include mq("sp"){
+  @include mq("sp") {
     display: block;
   }
 
   &:not(:first-child) {
     margin-top: 60px;
 
-    @include mq("sp"){
+    @include mq("sp") {
       margin-top: 30px;
     }
   }
@@ -808,13 +776,13 @@ width: 185px;
   padding: 5px 0 0;
   margin: 0;
 
-  @include mq("sp"){
-   width: 100%; 
+  @include mq("sp") {
+    width: 100%;
   }
 
   label {
     font-weight: bold;
-    
+
     &.is_must {
       display: inline-block;
       position: relative;
@@ -827,13 +795,13 @@ width: 185px;
         font-size: 14px;
         font-weight: bold;
         color: #fff;
-        background: #E81919;
+        background: #e81919;
         text-align: center;
         border-radius: 4px;
         padding: 3px 8px;
         line-height: 1;
 
-        @include mq("sp"){
+        @include mq("sp") {
           top: 50%;
           transform: translateY(-50%);
           left: calc(100% + 6px);
@@ -849,7 +817,7 @@ width: 185px;
   margin: 0;
   padding: 0;
 
-  @include mq("sp"){
+  @include mq("sp") {
     width: 100%;
   }
 
@@ -906,7 +874,6 @@ width: 185px;
     width: 100%;
     resize: none;
   }
-
 }
 
 .contact_form_radio {
@@ -922,7 +889,7 @@ width: 185px;
     position: relative;
     margin-right: 36px;
 
-    @include mq("sp"){
+    @include mq("sp") {
       margin-bottom: 8px;
       margin-right: 20px;
     }
@@ -951,7 +918,6 @@ width: 185px;
       transform: translateY(-50%);
       border-radius: 50%;
     }
-  
   }
 
   [type="radio"]:checked + span {
@@ -959,9 +925,7 @@ width: 185px;
       display: block;
     }
   }
-  
-  
- }
+}
 
 .contact_form_check {
   margin-top: 63px;
@@ -1037,13 +1001,13 @@ width: 185px;
     font-size: 16px;
     transition: all 0.3s ease 0s;
 
-    @include mq("sp"){
+    @include mq("sp") {
       width: 240px;
       height: 60px;
       line-height: 60px;
       font-size: 18px;
       padding: 0;
-      }
+    }
 
     &:hover {
       opacity: 0.7;
@@ -1055,7 +1019,7 @@ width: 185px;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 900px;
   max-width: calc(100% - 24px * 2);
   height: 652px;
@@ -1103,7 +1067,7 @@ width: 185px;
   font-weight: bold;
   padding-left: 20px;
   position: relative;
- 
+
   &::before {
     content: "";
     width: 4px;
@@ -1125,7 +1089,7 @@ width: 185px;
 .contact_modal_btn {
   text-align: center;
   padding-top: 60px;
-   a {
+  a {
     color: #fff;
     display: inline-block;
     width: 174px;
@@ -1133,9 +1097,9 @@ width: 185px;
     background: $color-main;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(#000,0.16);
+    box-shadow: 0 3px 6px rgba(#000, 0.16);
     line-height: 48px;
-   }
+  }
 }
 
 .contact_modal_icon {
@@ -1144,7 +1108,6 @@ width: 185px;
   right: -20px;
 
   a {
-
   }
 
   img {
@@ -1170,19 +1133,18 @@ footer {
   color: #fff;
   width: 100%;
 
-  @include mq("sp"){
+  @include mq("sp") {
     padding: 30px 0 16px;
   }
 }
 
 .footer_inner {
-
 }
 
 .footer_content {
   display: flex;
 
-  @include mq("sp"){
+  @include mq("sp") {
     display: block;
   }
 }
@@ -1190,7 +1152,7 @@ footer {
 .footer_left {
   width: 36%;
 
-  @include mq("sp"){
+  @include mq("sp") {
     width: 100%;
   }
 }
@@ -1199,7 +1161,7 @@ footer {
   width: 205px;
   margin-bottom: 32px;
 
-  @include mq("sp"){
+  @include mq("sp") {
     width: 150px;
   }
   a {
@@ -1211,7 +1173,6 @@ footer {
   }
 
   img {
-
   }
 }
 
@@ -1224,7 +1185,7 @@ footer {
   margin-top: 14px;
   margin-bottom: 46px;
 
-  @include mq("sp"){
+  @include mq("sp") {
     margin-top: 12px;
     margin-bottom: 20px;
   }
@@ -1233,7 +1194,7 @@ footer {
 .footer_center {
   width: 48%;
 
-  @include mq("sp"){
+  @include mq("sp") {
     width: 100%;
   }
 }
@@ -1244,15 +1205,14 @@ footer {
   margin: 0;
   font-family: $font-en;
 
-  @include mq("sp"){
+  @include mq("sp") {
     justify-content: center;
   }
   li {
-    
-    &:not(:first-child){
+    &:not(:first-child) {
       margin-left: 40px;
 
-      @include mq("sp"){
+      @include mq("sp") {
         margin-left: 20px;
       }
     }
@@ -1264,14 +1224,12 @@ footer {
       }
     }
   }
-
-  
 }
 
 .footer_right {
   width: 16%;
 
-  @include mq("sp"){
+  @include mq("sp") {
     width: 100%;
   }
 }
@@ -1282,13 +1240,12 @@ footer {
   margin: 0;
   padding: 0;
 
-  @include mq("sp"){
+  @include mq("sp") {
     justify-content: center;
     margin: 20px 0;
   }
   li {
-
-    &:not(:first-child){
+    &:not(:first-child) {
       margin-left: 16px;
     }
 
@@ -1304,7 +1261,6 @@ footer {
       width: 30px;
     }
   }
-
 }
 
 .footer_copy {
@@ -1335,11 +1291,15 @@ footer {
     img {
       width: 60px;
 
-      @include mq("sp"){
+      @include mq("sp") {
         width: 40px;
       }
     }
   }
+}
+
+.swiper-container {
+  overflow-x: hidden;
 }
 
 .swiper-button-next {
@@ -1349,11 +1309,11 @@ footer {
   background: transparent url(../img/arrow-next@2x.png) no-repeat center center / contain;
   right: calc(50% - #{$layout-width-inner} / 2);
 
-  @include mq("tab"){
+  @include mq("tab") {
     right: 10px;
   }
 
-  @include mq("sp"){
+  @include mq("sp") {
     right: 10px;
   }
 
@@ -1369,11 +1329,11 @@ footer {
   background: transparent url(../img/arrow-prev@.png) no-repeat center center / contain;
   left: calc(50% - #{$layout-width-inner} / 2);
 
-  @include mq("tab"){
+  @include mq("tab") {
     left: 10px;
   }
 
-  @include mq("sp"){
+  @include mq("sp") {
     left: 10px;
   }
 
@@ -1387,15 +1347,13 @@ footer {
   height: 16px;
   margin-left: 6px;
   margin-right: 6px;
-  background: #FFFFFF9E;
+  background: #ffffff9e;
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-  background: #2F7DC8;
+  background: #2f7dc8;
 }
-
-
 
 .drawer_icon {
   position: fixed;
@@ -1405,7 +1363,7 @@ footer {
   display: none;
   transition: transform 0.5s ease 0s;
 
-  @include mq('sp') {
+  @include mq("sp") {
     display: block;
   }
 
@@ -1416,11 +1374,11 @@ footer {
       top: 8px;
       transform: rotate(45deg);
     }
-    
+
     .drawer_icon_bar2 {
       display: none;
     }
-    
+
     .drawer_icon_bar3 {
       top: 8px;
       transform: rotate(-45deg);
@@ -1465,7 +1423,7 @@ footer {
   top: 0;
   right: 0;
   background: #fff;
-  box-shadow: 0 0 3px rgba(#000,0.16);
+  box-shadow: 0 0 3px rgba(#000, 0.16);
   z-index: 299;
   transform: translateX(105%);
   transition: transform 0.5s ease 0s;
@@ -1476,7 +1434,6 @@ footer {
 }
 
 .drawer_content_items {
-
 }
 
 .drawer_content_item {
@@ -1506,7 +1463,7 @@ footer {
   right: 0;
   width: 100%;
   height: 100%;
-  background: rgba(#000,0.8);
+  background: rgba(#000, 0.8);
   z-index: 298;
   display: none;
 
